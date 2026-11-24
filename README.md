@@ -5,6 +5,10 @@
 Baixe **vídeos e músicas** de milhares de sites. Mesma interface e funções da versão Linux, escrito em **Rust**.
 Usa o [yt-dlp](https://github.com/yt-dlp/yt-dlp) como motor e **se mantém atualizado sozinho**.
 
+## Prévia
+
+![Zek Download para Windows — tela principal](screenshot.png)
+
 ## Duas formas de usar
 - **Instalador:** `ZekDownload-Setup-x.y.z.exe` — instala só para você (sem administrador), com atalhos.
 - **Portátil:** `ZekDownload-Portable-x.y.z.zip` — extraia onde quiser e abra `zek-download.exe`.
