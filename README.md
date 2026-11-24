@@ -30,4 +30,10 @@ O build roda sozinho no GitHub a cada `push` na `main`:
 Localmente (Windows, com Rust e Inno Setup): `cargo test && cargo build --release`.
 O ícone é gerado por `python assets/make_icon.py`.
 
-Use apenas para conteúdo que você tem direito de baixar. Licença: MIT. Veja `SECURITY.md`.
+### ⚠️ Aviso sobre direitos autorais
+
+O Zek Download é uma ferramenta destinada ao download de conteúdos próprios, de domínio público ou cujo download tenha sido expressamente autorizado pelo titular dos direitos.
+
+O usuário é inteiramente responsável pelo uso do programa e deve respeitar as leis de direitos autorais e os termos de serviço das plataformas utilizadas.
+
+**Não utilize o Zek Download para baixar ou distribuir conteúdos protegidos sem a devida autorização.**. Licença: MIT. Veja `SECURITY.md`.
