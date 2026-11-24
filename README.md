@@ -1,5 +1,7 @@
 # Zek Download (Windows)
 
+![Prévia do Zek Download](docs/screenshots/screenshot.png)
+
 Baixe **vídeos e músicas** de milhares de sites. Mesma interface e funções da versão Linux, escrito em **Rust**.
 Usa o [yt-dlp](https://github.com/yt-dlp/yt-dlp) como motor e **se mantém atualizado sozinho**.
 
