@@ -63,10 +63,12 @@ jobs:
       - name: Checksums
         shell: pwsh
         run: |
-          Get-ChildItem dist -File | ForEach-Object {
-            $h = (Get-FileHash $_.FullName -Algorithm SHA256).Hash.ToLower()
-            "$h  $($_.Name)"
-          } | Out-File dist\SHA256SUMS.txt -Encoding ascii
+          $lines = @()
+          foreach ($f in Get-ChildItem dist -File | Where-Object { $_.Name -ne "SHA256SUMS.txt" }) {
+            $h = (Get-FileHash -LiteralPath $f.FullName -Algorithm SHA256).Hash.ToLower()
+            $lines += "$h  $($f.Name)"
+          }
+          Set-Content -Path dist\SHA256SUMS.txt -Value $lines -Encoding ascii
 
       - uses: actions/upload-artifact@v4
         with:
